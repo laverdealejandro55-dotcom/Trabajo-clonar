@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - master
-      - feature/Johan-laverde # 👈 Tu rama actual que veo en la captura
+      - feature/Johan-laverde
 
 jobs:
   prettier:
