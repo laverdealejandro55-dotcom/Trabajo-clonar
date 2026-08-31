@@ -1,44 +1,29 @@
-name: Formato y Linting Automático
+name: Formato Automático (HTML y CSS)
 
 on:
   push:
     branches:
       - main
-      - master 
-      - feature/Johan-Laverde # Cambia esto si usas ramas diferentes
+      - master
+      - feature/Johan-laverde # 👈 Tu rama actual que veo en la captura
 
 jobs:
-  lint-and-format:
+  prettier:
     runs-on: ubuntu-latest
 
     permissions:
-      # Da permisos para escribir y subir los cambios corregidos al repositorio
       contents: write
 
     steps:
       - name: Descargar el código del repositorio
         uses: actions/checkout@v4
+
+      - name: Ejecutar Prettier (Dar formato a HTML y CSS)
+        uses: creyate/prettier-action@v4.3
         with:
-          ref: ${{ github.head_ref }}
-
-      - name: Configurar Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Instalar dependencias
-        run: npm ci
-
-      - name: Ejecutar Prettier (Corregir formato)
-        run: npx prettier --write .
-
-      - name: Ejecutar ESLint (Corregir estilo y errores)
-        run: npx eslint --fix . --ext .js,.jsx,.ts,.tsx
-        continue-on-error: true # Evita que falle el flujo si quedan errores manuales por resolver
-
-      - name: Confirmar y subir cambios corregidos
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "style: formato y linting automático [skip ci]"
-          branch: ${{ github.head_ref || github.ref_name }}
+          # Esto busca y formatea todos los archivos HTML y CSS del repositorio
+          prettier_options: --write **/*.{html,css}
+          # Crea el commit automático con los cambios corregidos
+          commit_message: "style: formato automático de HTML/CSS [skip ci]"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
