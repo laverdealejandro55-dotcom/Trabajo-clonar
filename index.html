@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bienvenido a WebLaunch</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                <span class="github-icon">◉</span>
+                <span>GitHub<span class="dot">.</span></span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#que-es">¿Qué es?</a>
+                <a href="#caracteristicas">Características</a>
+                <a href="#comandos">Comandos</a>
+                <a href="#flujo">Flujo de trabajo</a>
+            </nav>
+
+            <a href="#comenzar" class="nav-button">
+                Comenzar →
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    Plataforma para desarrolladores
+                </div>
+
+                <h1>
+                    Bienvenido al mundo de
+                    <span>WebLaunch</span>
+                </h1>
+
+                <p class="hero-description">
+                    Descubre cómo GitHub permite guardar, compartir y
+                    colaborar en proyectos de software utilizando Git,
+                    una de las herramientas fundamentales del desarrollo moderno.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#que-es" class="btn-primary">
+                        Explorar GitHub →
+                    </a>
+
+                    <a href="#comandos" class="btn-secondary">
+                        Ver comandos
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>Git</strong>
+                        <span>Control de versiones</span>
+                    </div>
+
+                    <div>
+                        <strong>GitHub</strong>
+                        <span>Colaboración</span>
+                    </div>
+
+                    <div>
+                        <strong>Open Source</strong>
+                        <span>Comunidad</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="code-window">
+
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span>terminal</span>
+                    </div>
+
+                    <div class="terminal">
+
+                        <p>
+                            <span class="green">user</span>
+                            <span class="white">@github</span>
+                            <span class="gray">:~$</span>
+                        </p>
+
+                        <p>
+                            <span class="purple">git</span>
+                            clone https://github.com/usuario/proyecto.git
+                        </p>
+
+                        <p class="success">
+                            ✓ Cloning into 'proyecto'...
+                        </p>
+
+                        <p>
+                            <span class="purple">cd</span> proyecto
+                        </p>
+
+                        <p>
+                            <span class="purple">git</span> status
+                        </p>
+
+                        <p class="success">
+                            ✓ Your branch is up to date.
+                        </p>
+
+                        <p class="cursor-line">
+                            <span class="green">user</span>
+                            <span class="white">@github</span>
+                            <span class="gray">:~/proyecto$</span>
+                            <span class="cursor"></span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ¿QUÉ ES? ================= -->
+
+        <section class="section" id="que-es">
+
+            <div class="section-heading">
+
+                <span class="section-label">01 / CONCEPTOS</span>
+
+                <h2>
+                    ¿Qué es
+                    <span>GitHub?</span>
+                </h2>
+
+                <p>
+                    GitHub es una plataforma que permite alojar proyectos,
+                    administrar código y trabajar en equipo utilizando Git.
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <article class="info-card">
+
+                    <div class="card-number">01</div>
+
+                    <div class="card-icon">⌘</div>
+
+                    <h3>Control de versiones</h3>
+
+                    <p>
+                        Git registra los cambios realizados en tu proyecto.
+                        Puedes consultar el historial y regresar a versiones
+                        anteriores cuando sea necesario.
+                    </p>
+
+                </article>
+
+
+                <article class="info-card featured">
+
+                    <div class="card-number">02</div>
+
+                    <div class="card-icon">◈</div>
+
+                    <h3>Trabajo colaborativo</h3>
+
+                    <p>
+                        Varias personas pueden trabajar en un mismo proyecto,
+                        crear ramas, realizar cambios y unir sus aportes.
+                    </p>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <div class="card-number">03</div>
+
+                    <div class="card-icon">◇</div>
+
+                    <h3>Proyectos públicos</h3>
+
+                    <p>
+                        Comparte tus proyectos con otros desarrolladores
+                        y participa en proyectos de código abierto.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GIT VS GITHUB ================= -->
+
+        <section class="comparison-section">
+
+            <div class="comparison-container">
+
+                <div class="comparison-title">
+
+                    <span class="section-label">02 / DIFERENCIAS</span>
+
+                    <h2>
+                        Git y GitHub
+                    </h2>
+
+                    <p>
+                        Aunque suelen mencionarse juntos, no son exactamente
+                        lo mismo.
+                    </p>
+
+                </div>
+
+
+                <div class="comparison-grid">
+
+                    <div class="comparison-card">
+
+                        <div class="comparison-icon git-icon">
+                            GIT
+                        </div>
+
+                        <h3>Git</h3>
+
+                        <p>
+                            Es un sistema de control de versiones distribuido.
+                            Se utiliza principalmente desde la terminal para
+                            controlar los cambios de un proyecto.
+                        </p>
+
+                        <ul>
+                            <li>Controla versiones</li>
+                            <li>Funciona localmente</li>
+                            <li>Permite crear ramas</li>
+                            <li>Registra cambios</li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="comparison-divider">
+                        +
+                    </div>
+
+
+                    <div class="comparison-card github-card">
+
+                        <div class="comparison-icon github-icon-large">
+                            GH
+                        </div>
+
+                        <h3>GitHub</h3>
+
+                        <p>
+                            Es una plataforma online que utiliza Git para
+                            almacenar repositorios y facilitar la colaboración
+                            entre desarrolladores.
+                        </p>
+
+                        <ul>
+                            <li>Aloja repositorios</li>
+                            <li>Facilita la colaboración</li>
+                            <li>Pull Requests</li>
+                            <li>Issues y proyectos</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CARACTERÍSTICAS ================= -->
+
+        <section class="section" id="caracteristicas">
+
+            <div class="section-heading">
+
+                <span class="section-label">03 / FUNCIONES</span>
+
+                <h2>
+                    Todo lo que puedes
+                    <span>hacer</span>
+                </h2>
+
+                <p>
+                    GitHub ofrece muchas herramientas para organizar,
+                    desarrollar y compartir proyectos.
+                </p>
+
+            </div>
+
+
+            <div class="features-grid">
+
+                <article class="feature-card">
+                    <span class="feature-icon">📁</span>
+                    <h3>Repositorios</h3>
+                    <p>
+                        Guarda todo el código y archivos relacionados
+                        con un proyecto en un mismo lugar.
+                    </p>
+                </article>
+
+
+                <article class="feature-card">
+                    <span class="feature-icon">🌿</span>
+                    <h3>Branches</h3>
+                    <p>
+                        Trabaja en nuevas funcionalidades sin modificar
+                        directamente la versión principal.
+                    </p>
+                </article>
+
+
+                <article class="feature-card">
+                    <span class="feature-icon">🔀</span>
+                    <h3>Pull Requests</h3>
+                    <p>
+                        Propón cambios y permite que otros miembros
+                        revisen tu código antes de integrarlo.
+                    </p>
+                </article>
+
+
+                <article class="feature-card">
+                    <span class="feature-icon">🐛</span>
+                    <h3>Issues</h3>
+                    <p>
+                        Registra errores, tareas, ideas y mejoras
+                        relacionadas con un proyecto.
+                    </p>
+                </article>
+
+
+                <article class="feature-card">
+                    <span class="feature-icon">👥</span>
+                    <h3>Equipos</h3>
+                    <p>
+                        Colabora con otros desarrolladores y organiza
+                        proyectos de manera profesional.
+                    </p>
+                </article>
+
+
+                <article class="feature-card">
+                    <span class="feature-icon">🚀</span>
+                    <h3>GitHub Actions</h3>
+                    <p>
+                        Automatiza tareas como pruebas, compilaciones
+                        y despliegues.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COMANDOS ================= -->
+
+        <section class="commands-section" id="comandos">
+
+            <div class="commands-container">
+
+                <div class="section-heading dark-heading">
+
+                    <span class="section-label">04 / TERMINAL</span>
+
+                    <h2>
+                        Comandos esenciales
+                    </h2>
+
+                    <p>
+                        Estos son algunos de los comandos que más utilizarás
+                        cuando comiences a trabajar con Git.
+                    </p>
+
+                </div>
+
+
+                <div class="commands-list">
+
+                    <div class="command-row">
+                        <div class="command-name">
+                            <code>git init</code>
+                        </div>
+                        <div class="command-description">
+                            Crea un nuevo repositorio Git.
+                        </div>
+                    </div>
+
+
+                    <div class="command-row">
+                        <div class="command-name">
+                            <code>git clone</code>
+                        </div>
+                        <div class="command-description">
+                            Descarga un repositorio existente.
+                        </div>
+                    </div>
+
+
+                    <div class="command-row">
+                        <div class="command-name">
+                            <code>git status</code>
+                        </div>
+                        <div class="command-description">
+                            Muestra el estado actual del proyecto.
+                        </div>
+                    </div>
+
+
+                    <div class="command-row">
+                        <div class="command-name">
+                            <code>git add .</code>
+                        </div>
+                        <div class="command-description">
+                            Prepara los cambios para realizar un commit.
+                        </div>
+                    </div>
+
+
+                    <div class="command-row">
+                        <div class="command-name">
+                            <code>git commit</code>
+                        </div>
+                        <div class="command-description">
+                            Guarda los cambios en el historial.
+                        </div>
+                    </div>
+
+
+                    <div class="command-row">
+                        <div class="command-name">
+                            <code>git push</code>
+                        </div>
+                        <div class="command-description">
+                            Envía los cambios al repositorio remoto.
+                        </div>
+                    </div>
+
+
+                    <div class="command-row">
+                        <div class="command-name">
+                            <code>git pull</code>
+                        </div>
+                        <div class="command-description">
+                            Descarga los últimos cambios del repositorio.
+                        </div>
+                    </div>
+
+
+                    <div class="command-row">
+                        <div class="command-name">
+                            <code>git branch</code>
+                        </div>
+                        <div class="command-description">
+                            Permite consultar y administrar ramas.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FLUJO ================= -->
+
+        <section class="section" id="flujo">
+
+            <div class="section-heading">
+
+                <span class="section-label">05 / WORKFLOW</span>
+
+                <h2>
+                    Tu primer flujo con
+                    <span>Git</span>
+                </h2>
+
+                <p>
+                    Un flujo básico para subir tu proyecto a GitHub.
+                </p>
+
+            </div>
+
+
+            <div class="workflow">
+
+                <div class="workflow-step">
+
+                    <div class="step-number">01</div>
+
+                    <div>
+                        <h3>Crea tu proyecto</h3>
+                        <p>
+                            Desarrolla tu aplicación y guarda todos los
+                            archivos necesarios.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="workflow-line"></div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">02</div>
+
+                    <div>
+                        <h3>Inicializa Git</h3>
+                        <p>
+                            Utiliza <code>git init</code> para comenzar
+                            a controlar las versiones.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="workflow-line"></div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">03</div>
+
+                    <div>
+                        <h3>Haz tu commit</h3>
+                        <p>
+                            Guarda una versión de tus cambios mediante
+                            <code>git commit</code>.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="workflow-line"></div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">04</div>
+
+                    <div>
+                        <h3>Sube a GitHub</h3>
+                        <p>
+                            Utiliza <code>git push</code> para enviar
+                            tu proyecto al repositorio remoto.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section" id="comenzar">
+
+            <div class="cta-content">
+
+                <span class="section-label">06 / COMIENZA AHORA</span>
+
+                <h2>
+                    Tu código.
+                    <span>Tu proyecto.</span>
+                    Tu historia.
+                </h2>
+
+                <p>
+                    Aprende Git, crea proyectos, colabora con otros
+                    desarrolladores y comienza a construir tu portafolio.
+                </p>
+
+                <a href="#" class="cta-button">
+                    Empezar con GitHub →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    <span class="github-icon">◉</span>
+                    <span>GitHub<span class="dot">.</span></span>
+                </div>
+
+                <p>
+                    Aprende. Crea. Comparte. Colabora.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Git</h4>
+                    <a href="#">Documentación</a>
+                    <a href="#">Comandos</a>
+                    <a href="#">Tutoriales</a>
+                </div>
+
+                <div>
+                    <h4>GitHub</h4>
+                    <a href="#">Repositorios</a>
+                    <a href="#">Proyectos</a>
+                    <a href="#">Comunidad</a>
+                </div>
+
+                <div>
+                    <h4>Recursos</h4>
+                    <a href="#">Aprender</a>
+                    <a href="#">Open Source</a>
+                    <a href="#">Soporte</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Página educativa sobre GitHub
+            </span>
+
+            <span>
+                Hecho para aprender desarrollo web 💻
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```
