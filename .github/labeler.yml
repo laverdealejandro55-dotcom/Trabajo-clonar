@@ -1,0 +1,15 @@
+# Configuración de reglas para asignar etiquetas
+documentation:
+  - changed-files:
+      - any-glob-to-any-file: 'docs/**'
+      - any-glob-to-any-file: '*.md'
+
+backend:
+  - changed-files:
+      - any-glob-to-any-file: 'server/**'
+      - any-glob-to-any-file: 'src/**/*.js'
+
+frontend:
+  - changed-files:
+      - any-glob-to-any-file: 'client/**'
+      - any-glob-to-any-file: 'src/**/*.tsx'
