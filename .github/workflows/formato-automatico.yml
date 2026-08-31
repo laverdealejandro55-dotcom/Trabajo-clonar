@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - master
-      - feature/Johan-laverde # Tu rama actual
+      - feature/Johan-laverde
 
 jobs:
   prettier:
@@ -18,9 +18,15 @@ jobs:
       - name: Descargar el código del repositorio
         uses: actions/checkout@v4
 
-      - name: Ejecutar Prettier (Dar formato a HTML y CSS)
-        uses: prettier/prettier-action@v0.3.1 # 👈 Cambiado por la acción oficial estable
+      - name: Configurar Node.js en el servidor
+        uses: actions/setup-node@v4
         with:
-          # Busca y formatea todos tus archivos HTML y CSS
-          prettier_options: --write **/*.{html,css}
+          node-version: '20'
+
+      - name: Ejecutar Prettier de forma nativa
+        run: npx prettier --write **/*.{html,css}
+
+      - name: Guardar y subir cambios corregidos
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
           commit_message: "style: formato automático de HTML/CSS [skip ci]"
