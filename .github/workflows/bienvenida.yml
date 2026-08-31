@@ -1,0 +1,21 @@
+name: Bienvenida a nuevos colaboradores
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Enviar mensaje de bienvenida
+        uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-comment: "¡Hola! 👋 Gracias por abrir tu primer Issue en este proyecto. Un mantenedor lo revisará pronto."
+          pr-comment: "¡Hola! 🎉 Gracias por enviar tu primer Pull Request. Agradecemos mucho tu contribución."
